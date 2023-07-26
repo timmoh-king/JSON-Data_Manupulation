@@ -19,8 +19,7 @@
 
     <script>
       async function populate() {
-        const url =
-          "https://mdn.github.io/learning-area/javascript/oojs/json/superheroes.json";
+        const url ="db.json";
         const request = new Request(url);
         const response = await fetch(request);
         const superHeroes = await response.json();
